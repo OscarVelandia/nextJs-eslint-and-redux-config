@@ -1,2 +1,2 @@
-// Add all the exports like "export * from './fileName';"
+// Replace export {} by "export * from './fileName';"
 export {};

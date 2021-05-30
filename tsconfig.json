@@ -15,8 +15,8 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@features": ["src/features"],
       "@components": ["src/components"],
+      "@features": ["src/features"],
       "@hooks": ["src/hooks"],
       "@utils": ["src/utils"],
     }

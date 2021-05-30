@@ -7,6 +7,7 @@ module.exports = {
     'prettier',
     'airbnb',
     'airbnb/hooks',
+    'plugin:import/typescript',
     'plugin:prettier/recommended', // Make sure this is always the last configuration in the extends array. This will display prettier errors as ESLint errors.
   ],
   parser: '@typescript-eslint/parser',
@@ -23,11 +24,19 @@ module.exports = {
     'jsx-a11y/anchor-is-valid': 'off',
     // https://basarat.gitbooks.io/typescript/docs/tips/defaultIsBad.html
     'import/prefer-default-export': 'off',
+    // Necessary to work with Redux toolkit
+    'no-param-reassign': ['error', { props: false }],
+    'import/extensions': 'off',
     'react/jsx-filename-extension': [
       'error',
       {
         extensions: ['.tsx'],
       },
     ],
+  },
+  settings: {
+    'import/resolver': {
+      typescript: {}, // this loads <rootDir>/tsconfig.json to eslint
+    },
   },
 };

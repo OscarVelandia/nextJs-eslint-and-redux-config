@@ -1,9 +1,15 @@
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
+import { Provider } from 'react-redux';
+import { store } from '../app/store';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  // This is NextJs default code
-  // eslint-disable-next-line react/jsx-props-no-spreading
-  return <Component {...pageProps} />;
+  return (
+    <Provider store={store}>
+      {/* This is NextJs default code */}
+      {/* eslint-disable-next-line react/jsx-props-no-spreading */}
+      <Component {...pageProps} />{' '}
+    </Provider>
+  );
 }
 export default MyApp;

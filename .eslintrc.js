@@ -24,15 +24,18 @@ module.exports = {
     'jsx-a11y/anchor-is-valid': 'off',
     // https://basarat.gitbooks.io/typescript/docs/tips/defaultIsBad.html
     'import/prefer-default-export': 'off',
-    // Necessary to work with Redux toolkit
+    // Necessaries to work with Redux toolkit
     'no-param-reassign': ['error', { props: false }],
-    'import/extensions': 'off',
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+    // Necessary to work with TS
     'react/jsx-filename-extension': [
       'error',
       {
         extensions: ['.tsx'],
       },
     ],
+    // Personal preferences
+    'import/extensions': 'off',
   },
   settings: {
     'import/resolver': {

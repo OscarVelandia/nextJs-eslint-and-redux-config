@@ -5,10 +5,11 @@ If you want to use this config in a production project, have in mind that *RTK Q
 ## Getting Started
 
 1. Clone the repository
-2. Run `rm -rf .git` to delete the git information of this repository
-3. Update the package.json name property
-4. Run yarn to install dependencies
-5. Enjoy
+2. Run `rm -rf .git` to delete the git information of the repository
+3. Run `git init` to start a new git config
+4. Update the package.json name property
+5. Run yarn to install dependencies
+6. Enjoy
 
 ## Project folder config
 The resolver of every folder is @folderName, E.G. @features imports the files in the features folder, don't forget add the export of every file in index.tsx  

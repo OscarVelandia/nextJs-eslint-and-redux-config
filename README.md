@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project with Redux-toolkit, Typescript, Prettier and ESLint (with airbnb style guide) already configured.
+This is a [Next.js](https://nextjs.org/) project with RTK (Redux Toolkit), Typescript, Prettier and ESLint (with airbnb style guide) already configured.
+
+If you want to use this config in a production project, have in mind that *RTK Query* is in process of moving to the RTK repo and probably in the short term it will need some migration, this migration could be just delete the RTK Query package, but who knows.
 
 ## Getting Started
 

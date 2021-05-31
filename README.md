@@ -6,7 +6,7 @@ If you want to use this config in a production project, have in mind that *RTK Q
 
 1. Clone the repository
 2. Run `rm -rf .git` to delete the git information of the repository
-3. Run `git init` to start a new git config
+3. Run `git init` to start a new Git repository
 4. Update the package.json name property
 5. Run yarn to install dependencies
 6. Enjoy

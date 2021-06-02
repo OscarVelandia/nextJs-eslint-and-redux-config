@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { counterReducer } from '@features';
+import { counterReducer } from '@features/counter';
 import { pokemonApi } from '@services';
 
 export const store = configureStore({

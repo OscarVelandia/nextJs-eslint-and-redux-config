@@ -1,12 +1,12 @@
 import Head from 'next/head';
 import { useAppDispatch, useAppSelector } from '@store';
-import { incremented, incrementBy } from '@features';
+import { incremented, incrementBy } from '@features/counter';
 import { useGetMoveBattleStyleByNameQuery } from '@services';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
-  const counter = useAppSelector((state) => state.counter.value);
   const dispatch = useAppDispatch();
+  const counter = useAppSelector((state) => state.counter.value);
   const { data, isFetching } = useGetMoveBattleStyleByNameQuery(1);
 
   return (

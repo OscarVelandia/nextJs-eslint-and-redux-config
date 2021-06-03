@@ -15,7 +15,7 @@ If you want to use this config in a production project, have in mind that *RTK Q
 The resolver of every folder is @folderName, E.G. @features imports the files in the features folder, don't forget add the export of every file in index.tsx  
 
 * ### components
-  Folder with every React component with their corresponding *[componentName].module.css*.
+  Folder with every React component with their corresponding *[componentName].module.scss*.
 
 * ### features
   Folder with every feature with a RTK slice and feature components slice, as a convention the name of every slice is featureName + Slice suffix, E.G. counterSlice.ts.

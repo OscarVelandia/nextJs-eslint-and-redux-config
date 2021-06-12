@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org/) project with RTK (Redux Toolkit), Typescript, Prettier and ESLint (with airbnb style guide) already configured.
 
-If you want to use this config in a production project, have in mind that *RTK Query* is in process of moving to the RTK repo and probably in the short term it will need some migration, this migration could be just delete the RTK Query package, but who knows.
+There is a warning because an useLayoutEffect used by RTK, but it works without any problem, and will be fixed in the next 1.7 release according to this issue https://github.com/reduxjs/redux-toolkit/issues/1173
 
 ## Getting Started
 

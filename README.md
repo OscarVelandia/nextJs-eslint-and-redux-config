@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project with RTK (Redux Toolkit), Typescript, Prettier and ESLint (with airbnb style guide) already configured.
+This is a [Next.js](https://nextjs.org/) project with [RTK (Redux Toolkit)](https://redux-toolkit.js.org/), Typescript, Prettier and ESLint (with airbnb style guide) already configured.
 
 There is a warning because an useLayoutEffect used by RTK, but it works without any problem, and will be fixed in the next 1.7 release according to this issue https://github.com/reduxjs/redux-toolkit/issues/1173
 

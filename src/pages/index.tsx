@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { useAppDispatch, useAppSelector } from '@store';
 import { incremented, incrementBy } from '@features/counter';
 import { useGetMoveBattleStyleByNameQuery } from '@services';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Home.module.scss';
 
 export default function Home() {
   const dispatch = useAppDispatch();

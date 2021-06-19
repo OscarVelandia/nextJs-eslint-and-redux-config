@@ -38,7 +38,7 @@ module.exports = {
     'react/require-default-props': 'off',
     // Gives errors incorrectly because components are imported in an index to use resolvers
     'import/no-cycle': 'off',
-    // note you must disable the base rule as it can report incorrect errors
+    // has conflict with the typescript same rule
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': ['error'],
     // This project doesn't use prop-types
@@ -47,7 +47,10 @@ module.exports = {
     'consistent-return': 'off',
     // Personal preferences
     'import/extensions': 'off',
-    'no-use-before-define': ['error', { functions: false }],
+    // Use the typescript rule instead of no-use-before-define to fix bug with React import
+    'no-use-before-define': 'off',
+    // Use "function" instead of "arrow function expression" when the invocation is before the function definition
+    '@typescript-eslint/no-use-before-define': ['error', { functions: false }],
   },
   settings: {
     'import/resolver': {
